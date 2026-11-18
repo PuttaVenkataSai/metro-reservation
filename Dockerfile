@@ -1,0 +1,4 @@
+FROM tomcat:10.1-jdk17-temurin
+COPY target/metro-reservation-1.0.war /usr/local/tomcat/webapps/metro.war
+EXPOSE 8080
+CMD ["catalina.sh","run"]
